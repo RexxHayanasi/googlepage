@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesin Pencari Sederhana</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #fff;
+            font-family: Arial, sans-serif;
+        }
+        .logo {
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            width: 584px;
+            padding: 16px;
+            font-size: 24px;
+            border: 1px solid #dcdcdc;
+            border-radius: 24px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+            outline: none;
+        }
+        input[type="text"]:focus {
+            border-color: #4285f4;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            margin: 11px 4px;
+            border: none;
+            background-color: #f8f9fa;
+            color: #5f6368;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+        }
+        input[type="submit"]:hover {
+            background-color: #f1f1f1;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #70757a;
+        }
+    </style>
+</head>
+<body>
+
+<div class="logo">
+    <h1 style="font-size: 48px; font-weight: bold;">Google</h1> <!-- Logo placeholder -->
+</div>
+<form action="https://www.google.com/search" method="GET">
+    <input type="text" name="q" placeholder="Cari di Google atau ketik URL" required>
+</form>
+<div class="buttons">
+    <input type="submit" value="Google Search" onclick="this.form.submit();">
+    <input type="button" value="I'm Feeling Lucky" onclick="window.location.href='https://www.google.com/doodles';">
+</div>
+<footer>
+    <p>Indonesia</p>
+</footer>
+
+</body>
+</html>
