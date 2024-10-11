@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Pencarian Google</title>
     <style>
         body {
             display: flex;
@@ -24,7 +24,7 @@
             margin-bottom: 0; /* Pastikan tidak ada margin bawah */
         }
         input[type="text"] {
-            width: 400px; /* Ubah lebar input pencarian */
+            width: 350px; /* Ubah lebar input pencarian */
             padding: 8px;
             font-size: 24px;
             border: 1px solid #dcdcdc;
@@ -68,11 +68,11 @@
 </div>
 <form action="https://www.google.com/search" method="GET">
     <input type="text" name="q" placeholder="Cari di Google atau ketik URL" required>
+    <div class="buttons">
+        <input type="submit" value="Google Search">
+        <input type="button" value="I'm Feeling Lucky" onclick="window.location.href='https://www.google.com/doodles';">
+    </div>
 </form>
-<div class="buttons">
-    <input type="submit" value="Google Search" onclick="this.form.submit();">
-    <input type="button" value="I'm Feeling Lucky" onclick="window.location.href='https://www.google.com/doodles';">
-</div>
 <footer>
     <p>Indonesia</p>
 </footer>
